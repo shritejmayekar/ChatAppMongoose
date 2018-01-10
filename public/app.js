@@ -1,5 +1,7 @@
 var app = angular.module('myApp',['ui.router']);
+
 app.config(function($stateProvider,$urlRouterProvider) {
+
   $stateProvider
       .state('login',{
         url:'/login',
@@ -16,6 +18,7 @@ app.config(function($stateProvider,$urlRouterProvider) {
         templateUrl:'template/register.html',
         controller:'registerController'
       });
+
   $urlRouterProvider.otherwise('/login');
 
 });
